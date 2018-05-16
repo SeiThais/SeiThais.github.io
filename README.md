@@ -1,1 +1,0 @@
-# SeiThais.github.io
