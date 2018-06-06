@@ -55,7 +55,7 @@
        if (i <= 5){
          listItem = document.getElementById("item" + i);
          listItem.innerHTML = document.getElementById("toolBox").value;
-         document.getElementById("toolBox").innerHTML = "";
+         document.getElementById("toolBox").value = "";
          if (i === 5){
            document.getElementById("resultsExpl").innerHTML = "Thanks for your suggestions."
          }
