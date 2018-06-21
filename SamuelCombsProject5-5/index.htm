@@ -52,20 +52,16 @@
    </article>
 
    <script>
-
+       
        function createTOC() {
-        var list = document.getElementsByTagName("ul");
+        var list = document.querySelector("ul");
         var headingText;
         var TOCEntry;
         for(var i = 1; i <= 10; i++) {
-
-        headingText = document.getElementById(i);
-
+        headingText = document.getElementById(i).innerHTML;
         TOCEntry = document.createElement("li");
-
-        TOCEntry.innerText = "<a href=#" + i + ">" + headingText + "</a>";
-
-        TOCEntry = list.lastChild;
+        list.appendChild(TOCEntry);
+        TOCEntry.innerHTML = "<a href=#" + i + ">" + headingText + "</a>";
         }
        }
 
